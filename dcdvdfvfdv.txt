@@ -1,0 +1,12 @@
+ @using (Ajax.BeginForm("Create", "Employee", null, new AjaxOptions { HttpMethod = "Post", OnSuccess = "CreateAssetSuccess" }, new { @class = "form-horizontal", role = "form" }))
+        {}
+-------------------------------------------------------------------------------------------------
+
+ {
+                                "mRender": function (data, type, row, column) {
+                                    var action = '<button class="btn btn-success btn-xs" onclick="getTaskDetail(\'' + row.ID + '\');"><span class="glyphicon glyphicon-plus"></span></button>';
+                                    action += '<button class="btn btn-primary btn-xs" style="margin-left:7px;" onclick="getWorkOrder(\'' + row.ID + '\');"><span class="glyphicon glyphicon-pencil"></span></button>';
+                                    action += '<button class="btn btn-danger btn-xs" type="button" style="margin-left:7px;" onclick="deleteWorkOrder(\'' + row.ID + '\');"><span class="glyphicon glyphicon-trash"></span></button>';
+                                    return action;
+                                }
+                            }
