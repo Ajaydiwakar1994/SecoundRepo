@@ -35,3 +35,5 @@ my updatddddd
 Total Experience in JavaScript / JQuery : 2.4 YEARS
 Total experience in handling end to end project :2.4 YEARS
 Number of projects done from scratch : 3
+
+secound update
